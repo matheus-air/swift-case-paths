@@ -5,7 +5,7 @@ import PackageDescription
 let package = Package(
   name: "swift-case-paths",
   platforms: [
-    .iOS(.v13),
+    .iOS(.v11),
     .macOS(.v10_15),
     .tvOS(.v13),
     .watchOS(.v6),
@@ -18,7 +18,7 @@ let package = Package(
   ],
   dependencies: [
     .package(name: "Benchmark", url: "https://github.com/google/swift-benchmark", from: "0.1.0"),
-    .package(url: "https://github.com/pointfreeco/xctest-dynamic-overlay", from: "0.8.0"),
+    .package(url: "git@github.com:matheus-air/xctest-dynamic-overlay.git", branch: "ios-11-compability"),
   ],
   targets: [
     .target(
