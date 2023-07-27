@@ -47,6 +47,7 @@ public func XCTUnwrap<Enum, Case>(
 ///   - casePath: A case path that can extract and embed the associated value of a particular case.
 ///   - message: An optional description of a failure.
 ///   - body: A closure that can modify the associated value of the given case.
+@available(iOS 13.0, *)
 public func XCTModify<Enum, Case>(
   _ enum: inout Enum,
   case casePath: CasePath<Enum, Case>,
@@ -96,6 +97,7 @@ public func XCTModify<Enum, Case>(
   `enum` = casePath.embed(value)
 }
 
+@available(iOS 13.0, *)
 @_spi(Internals) public enum XCTModifyLocals {
   @TaskLocal public static var isExhaustive = true
 }
