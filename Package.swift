@@ -18,7 +18,7 @@ let package = Package(
   ],
   dependencies: [
     .package(name: "Benchmark", url: "https://github.com/google/swift-benchmark", from: "0.1.0"),
-    .package(url: "git@github.com:matheus-air/xctest-dynamic-overlay.git", branch: "ios-11-compability"),
+    .package(url: "git@github.com:matheus-air/xctest-dynamic-overlay.git", branch: "ios-11-compatibility"),
   ],
   targets: [
     .target(
